@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calcular média de consumo no banho</h1>
+
+    <label for="potencias">Selecione a Potência do seu chuveiro:</label>
+    <input list="potencias" name="potencias" id="watts">
+    <datalist id="potencias">
+        <option value="5500">5500W</option>
+        <option value="7500">7500W</option>
+        <option value="8500">8500W</option>
+        <option value="9500">9500W</option>
+    </datalist> <br><br>
+
+
+    <label for="tempo">Selecione o tempo de uso diário (em minutos):</label><br>
+    <input type="number" name="tempo" id="tempo" min="0">
+    <br><br><button onclick="calcularConsumo()">Calcular</button>
+
+    <script>
+        function calcularConsumo() {
+            var potencia = document.getElementById('watts').value;
+            var tempo = document.getElementById('tempo').value;
+            var consumo = ((potencia/1000) * (tempo/60));
+
+            document.getElementById('gasto-kwh').innerText = 'Gasto energético: ' + consumo.toFixed(5) + ' kWh';
+            calcularGasto(consumo);
+        }
+
+        function calcularGasto(consumo) {
+            var valor = 0.5;
+            var gasto = consumo * valor;
+
+            document.getElementById('gasto-reais').innerText = 'Gasto em reais: R$ ' + gasto.toFixed(2);
+        }
+
+    </script>
+    <p id="gasto-kwh">Gasto energético: </p>
+
+    <p id="gasto-reais">Gasto em reais: R$ 0.00</p>
+</body>
+
+</html>
