@@ -1,7 +1,14 @@
-body{
-    background-color: 
-    #6094b4;
-    margin: 0;
+main {
+    background-image: linear-gradient(80deg, #6094b4, rgb(195, 195, 233));
+    height: 100vh;
+}
+
+h1{
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 *{
@@ -32,4 +39,145 @@ header{
 
 .headerIcon{
     width: 480px;
+}
+
+.mainDivPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labelCalculoConsumo{
+    font-size: 24px;
+    font-weight: 100;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.divConsumo{
+    display: block;
+    margin-top: 20px;
+}
+
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown *{
+    box-sizing: border-box;
+}
+
+.select{
+    background-color: #404a99;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-clicked{
+    border:2px #080c2c solid;
+    box-shadow: 0 0 0.8em #374088;
+}
+
+.select:hover{
+    background-color: #374088;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background-color: #6094b4;
+    border: 1px solid #374088;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: azure;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #6094b4;
+}
+
+.active{
+    background: #374088;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+.selecionePot{
+    display: flex;
+    align-items: center;
+}
+
+.inputTempo{
+    width: 120px;
+    height: 18px;
+    padding: 4.8px;
+    margin-left: 2em;
+    border-radius: 0.5em;
+    background-color: #404a99;
+    color: azure;
+}
+
+.inputTempo::placeholder{
+    color: azure;
+}
+
+.btnCalcular{
+    margin-top: 10px;
+    width: 160px;
+    height: 28px;
+    padding: 4.8px;
+    border-radius: 0.5em;
+    background-color: #404a99;
+    color: azure;
+    font-size: 18px;
+    text-align: center;
+}
+
+.resultado{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
 }
