@@ -1,3 +1,35 @@
+body{
+    background-color: 
+    #6094b4;
+    margin: 0;
+}
+
+*{
+    margin: 0; padding: 0; border: 0;
+}
+
 header{
     background-color: #080c2c;
+    margin: 0;
+}
+
+.headerUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.headerLink{
+    text-decoration: none;
+    font-size: 24px;
+    color: #6094b4;
+}
+
+.headerLink:hover{
+    text-decoration: underline;
+}
+
+.headerIcon{
+    width: 480px;
 }
