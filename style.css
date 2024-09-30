@@ -7,7 +7,7 @@ h1{
     margin-top: 30px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -91,6 +91,10 @@ header{
     background-color: #374088;
 }
 
+.select > span{
+    font-family: sans-serif;
+}
+
 .caret{
     width: 0;
     height: 0;
@@ -124,6 +128,7 @@ header{
 }
 
 .menu li{
+    font-family: sans-serif;
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
@@ -156,10 +161,12 @@ header{
     border-radius: 0.5em;
     background-color: #404a99;
     color: azure;
+    font-family: sans-serif;
 }
 
 .inputTempo::placeholder{
     color: azure;
+    font-family: sans-serif;
 }
 
 .btnCalcular{
@@ -173,6 +180,7 @@ header{
     font-size: 18px;
     text-align: center;
     cursor: pointer;
+    font-family: sans-serif;
 }
 
 .resultado{

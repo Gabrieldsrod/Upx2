@@ -29,10 +29,20 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+document.getElementById('tempo').addEventListener('input', function () {
+    var valor = this.value;
+    
+    // Verifica se o valor é negativo
+    if (valor < 0) {
+        this.value = ''; // Limpa o campo se o valor for negativo
+    }
+});
+
 function calcularConsumo() {
     var potencia = document.querySelector('.select span').innerText.replace('W', ''); // Remove 'W' para obter o valor numérico
     var tempoMinutos = document.getElementById('tempo').value;
-    var tempoHoras = tempoMinutos / 60; // Converter minutos em horas
+
+    var tempoHoras = Math.abs(tempoMinutos) / 60; // Converter minutos em horas
     var consumo = (potencia * tempoHoras) / 1000; // Consumo em kWh
 
     // Atualizar o consumo em kWh
