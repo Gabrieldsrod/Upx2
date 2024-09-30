@@ -172,6 +172,7 @@ header{
     color: azure;
     font-size: 18px;
     text-align: center;
+    cursor: pointer;
 }
 
 .resultado{
