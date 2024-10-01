@@ -83,7 +83,6 @@ header{
 }
 
 .select-clicked{
-    border:2px #080c2c solid;
     box-shadow: 0 0 0.8em #374088;
 }
 
@@ -162,6 +161,12 @@ header{
     background-color: #404a99;
     color: azure;
     font-family: sans-serif;
+    outline: none;
+}
+
+.inputTempo:hover{
+    border: none;
+    outline: none;
 }
 
 .inputTempo::placeholder{
