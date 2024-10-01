@@ -15,7 +15,7 @@
     <header>
         <ul class="headerUl">
             <li><a class="headerLink" href="#">Sobre nós</a></li>
-            <li><img class="headerIcon" src="img/logoAquaEnergy.png" alt="Logo da Aqua Energy"></li>
+            <li><img class="headerIcon" src="img/logoAcquaEnergy.png" alt="Logo da Aqua Energy"></li>
         </ul>
     </header>
 
@@ -25,7 +25,7 @@
             <div class="selecionePot">
 
                 <!-- Custom Dropdown -->
-                <p class="labelCalculoConsumo">Selecione a potência do chuveiro: </p>
+                <p class="labelCalculoConsumo">Selecione a potência do chuveiro:</p>
                 <div class="dropdown">
                     <div class="select">
                         <span>5500W</span>
@@ -46,11 +46,12 @@
             </div>
 
             <button class="btnCalcular" onclick="calcularConsumo()">Calcular</button>
-
-            <p class="resultado" id="resultado" style="display: none;">
-                Consumo: <span class="consumo">0 kWh</span><br>
-                Custo: <span class="custo">R$ 0.00</span>
-            </p>
+            <div id="caixaResultado" class="resultado" >
+                <p id="resultado"  style="display: none;">
+                    Consumo: <span class="consumo">0 kWh</span><br>
+                    Custo: <span class="custo">R$ 0.00</span>
+                </p>
+            </div>
             
         </div>
     </main>

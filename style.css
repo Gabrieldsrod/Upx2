@@ -30,7 +30,7 @@ header{
 .headerLink{
     text-decoration: none;
     font-size: 24px;
-    color: #6094b4;
+    color: #fff;
 }
 
 .headerLink:hover{
@@ -38,10 +38,21 @@ header{
 }
 
 .headerIcon{
-    width: 480px;
+    width: 400px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 .mainDivPrincipal{
+    box-shadow: 0 0 20px #374088;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +72,9 @@ header{
 }
 
 .dropdown{
-    min-width: 15em;
+    /*min-width: 15em;*/
+    width: 120px;
+    height: 36px;
     position: relative;
     margin: 2em;
 }
@@ -71,8 +84,11 @@ header{
 }
 
 .select{
+    width: 120px;
+    height: 30px;
     background-color: #404a99;
     color: white;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +108,7 @@ header{
 
 .select > span{
     font-family: sans-serif;
+    font-size: 16px;
 }
 
 .caret{
@@ -128,6 +145,7 @@ header{
 
 .menu li{
     font-family: sans-serif;
+    font-size: 16px;
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
@@ -148,18 +166,23 @@ header{
 }
 
 .selecionePot{
+    margin-top: 20px;
+    text-align: center;
+    width: 600px;
     display: flex;
-    align-items: center;
+    align-items: center;  
+    justify-content: center;  
 }
 
 .inputTempo{
     width: 120px;
-    height: 18px;
+    height: 30px;
     padding: 4.8px;
     margin-left: 2em;
     border-radius: 0.5em;
     background-color: #404a99;
     color: azure;
+    font-size: 16px;
     font-family: sans-serif;
     outline: none;
 }
@@ -170,28 +193,37 @@ header{
 }
 
 .inputTempo::placeholder{
+    font-size: 16px;
     color: azure;
     font-family: sans-serif;
 }
 
 .btnCalcular{
-    margin-top: 10px;
-    width: 160px;
-    height: 28px;
+    margin-top: 30px;
+    width: 200px;
+    height: 36px;
     padding: 4.8px;
     border-radius: 0.5em;
     background-color: #404a99;
     color: azure;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     cursor: pointer;
     font-family: sans-serif;
 }
 
 .resultado{
-    margin-top: 10px;
-    font-size: 18px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    width: 30vh;
+    height: 10vh;
+    margin-top: 20px;
+    font-size: 20px;
     font-weight: 100;
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
+    border-radius: 0.5em;
+    border: 2px solid #404a99;
 }
