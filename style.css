@@ -212,9 +212,8 @@ main{
     font-family: sans-serif;
 }
 
-.resultado{
-    opacity: 0;
-    display: flex;
+#caixaResultado{
+    display: none;
     align-items: center;
     padding: 10px 10px;
     width: 30vh;

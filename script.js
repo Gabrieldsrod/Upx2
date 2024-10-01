@@ -56,7 +56,7 @@ function calcularConsumo() {
 
     // Tornar a seção de resultados visível
     document.getElementById('resultado').style.display = 'block';
-    document.getElementById('caixaResultado').style.opacity='1';
+    document.getElementById('caixaResultado').style.display = 'flex';
 }
 
 
