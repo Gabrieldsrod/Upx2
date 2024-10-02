@@ -38,6 +38,12 @@ document.getElementById('tempo').addEventListener('input', function () {
     }
 });
 
+document.addEventListener('keydown', function(event){
+    if(event.key === 'Enter'){
+        calcularConsumo();
+    }
+});
+
 function calcularConsumo() {
     var potencia = document.querySelector('.select span').innerText.replace('W', ''); // Remove 'W' para obter o valor numérico
     var tempoMinutos = document.getElementById('tempo').value;
