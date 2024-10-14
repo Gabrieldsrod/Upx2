@@ -1,6 +1,26 @@
-main {
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
     background-image: linear-gradient(80deg, #6094b4, rgb(195, 195, 233));
-    height: 100vh;
+    background-size: cover; /* Ensures the background image covers the whole screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    min-height: 100vh;
+}
+
+main {
     display: flex;
     justify-content: center;
 }
@@ -13,18 +33,12 @@ h1 {
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
 header {
     width: auto;
     background-color: #080c2c;
     padding: 10px;
 }
-
 .headerUl {
     display: flex;
     justify-content: space-around;
@@ -48,7 +62,7 @@ header {
 }
 
 
-.mainDivPrincipal {
+.mainContainer {
     max-width: 600px;
     box-shadow: 0 0 20px #374088;
     padding: 10px 20px;
